@@ -26,6 +26,6 @@ jobs:
         with:
           draft: true
           files: |
-            cttest-12.23-456-linux-x64.tar.gz
-            cttest-12.23-456-linux-x64.deb
-            cttest-12.23-456-linux-x64.run
+            cttest-*.tar.gz
+            cttest-*.deb
+            cttest-*.run
