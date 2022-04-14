@@ -1,0 +1,31 @@
+name: draft-release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Build binary archives
+        run: echo "this is binary archive" > cttest-12.23-456-linux-x64.tar.gz
+      - name: Build DEB and RPM packages
+        run: echo "this is deb archive" > cttest-12.23-456-linux-x64.deb
+      - name: Build installers
+        run: echo "this is run installer" > cttest-12.23-456-linux-x64.run
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: true
+          files: |
+            cttest-12.23-456-linux-x64.tar.gz
+            cttest-12.23-456-linux-x64.deb
+            cttest-12.23-456-linux-x64.run
