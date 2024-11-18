@@ -23,7 +23,7 @@
 
 {application, cttest,
  [{description,  "TEST TEST TEST just for me testing hex publishing"},
-  {vsn,          "6.0.15"},
+  {vsn,          "6.0.16"},
   {modules,      []},
   {registered,   []},
   {applications, [kernel, stdlib, p1_utils]},
