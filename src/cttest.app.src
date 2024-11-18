@@ -22,8 +22,8 @@
 %%%----------------------------------------------------------------------
 
 {application, cttest,
- [{description,  "TESTTEST In-memory cache Erlang / Elixir library"},
-  {vsn,          "1.0.4"},
+ [{description,  "TEST TEST TEST just for me testing hex publishing"},
+  {vsn,          "6.0.12"},
   {modules,      []},
   {registered,   []},
   {applications, [kernel, stdlib, p1_utils]},
@@ -32,7 +32,7 @@
   %% hex.pm packaging:
   {files, ["src/", "include/", "c_src/ets_cache.c", "rebar.config", "rebar.config.script", "README.md", "LICENSE.txt"]},
   {licenses, ["Apache 2.0"]},
-  {links, [{"Github", "https://github.com/badlop/cache_tab"}]}]}.
+  {links, [{"Github", "https://github.com/badlop/cttest"}]}]}.
 
 %% Local Variables:
 %% mode: erlang
