@@ -16,6 +16,3 @@ jobs:
         run: DIAGNOSTIC=1 rebar3 hex publish --repo hexpm --yes
         env:
           HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
-
-      - name: Check crash dump
-        run: head rebar3.crashdump
